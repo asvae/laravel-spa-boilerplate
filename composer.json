@@ -1,12 +1,17 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "asvae/laravel-boilerplate",
+    "description": "The Laravel Framework boilerplate",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "barryvdh/laravel-debugbar": "v2.1.1",
+        "barryvdh/laravel-ide-helper": "v2.1.2",
+        "laravelcollective/html": "v5.2.4",
+        "doctrine/dbal": "v2.5.4",
+        "spatie/laravel-fractal": "1.9.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -41,6 +46,9 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
             "php artisan optimize"
         ]
     },
