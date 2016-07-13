@@ -167,6 +167,11 @@ return [
         // Dev
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+
+        /**
+         * App
+         */
+        App\ApiTester\ApiTesterServiceProvider::class,
     ],
 
     /*
