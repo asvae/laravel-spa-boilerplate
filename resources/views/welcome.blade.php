@@ -34,6 +34,8 @@
                 font-size: 96px;
             }
         </style>
+
+        {!! Html::script('js/main.js') !!}
     </head>
     <body>
         <div class="container">
