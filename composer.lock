@@ -4,9 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "427bc3d5a4cd5ede9b2dcc0b5ccae520",
-    "content-hash": "8394ec8c0d3f29c381ac48785b26f7be",
+    "hash": "94a1b9acc5ad6754a2604c393f971329",
+    "content-hash": "2cbd0bbbfe358866462a4a9046becbf7",
     "packages": [
+        {
+            "name": "asvae/laravel-api-tester",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asvae/laravel-api-tester.git",
+                "reference": "f5a748fbcbdcf04107daa990139f555a61dc1f8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/f5a748fbcbdcf04107daa990139f555a61dc1f8e",
+                "reference": "f5a748fbcbdcf04107daa990139f555a61dc1f8e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Asvae\\ApiTester\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yauheni Prakopchyk",
+                    "email": "ontrew@gmail.com"
+                }
+            ],
+            "description": "Api tester for Laravel Framework",
+            "keywords": [
+                "api",
+                "debug",
+                "laravel"
+            ],
+            "time": "2016-07-14 21:42:41"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v2.1.1",

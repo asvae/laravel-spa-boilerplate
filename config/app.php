@@ -171,7 +171,7 @@ return [
         /**
          * App
          */
-        App\ApiTester\ApiTesterServiceProvider::class,
+        Asvae\ApiTester\ServiceProvider::class,
     ],
 
     /*
