@@ -23,4 +23,15 @@ class MainTest extends TestCase
         $this->get('_api-tester/assets/api-tester.js')->seeStatusCode(200);
         $this->get('_api-tester/assets/api-tester.css')->seeStatusCode(200);
     }
+
+    public function test_routes_have_required_structure()
+    {
+        $this->post('_api-tester/routes');
+
+        $this->seeJsonStructure([
+            'data' => [
+                '*' => ['method', 'path', 'action'],
+            ],
+        ]);
+    }
 }
