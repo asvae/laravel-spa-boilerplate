@@ -1,9 +1,5 @@
 <?php
 
-use Illuminate\Foundation\Testing\WithoutMiddleware;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-
 class MainTest extends TestCase
 {
     public function test_page_is_displayed()
@@ -22,6 +18,16 @@ class MainTest extends TestCase
     {
         $this->get('api-tester/assets/api-tester.js')->seeStatusCode(200);
         $this->get('api-tester/assets/api-tester.css')->seeStatusCode(200);
+    }
+
+    public function test_requests_have_required_structure()
+    {
+        $this->get('api-tester/requests')->seeJsonStructure(['data' => []]);
+    }
+
+    public function test_invalid_request_can_not_be_stored(){
+        
+        $this->post('api-tester/requests', [])->seeStatusCode(422);
     }
 
     public function test_routes_have_required_structure()
