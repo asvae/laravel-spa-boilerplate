@@ -20,13 +20,13 @@ class MainTest extends TestCase
 
     public function test_assets_are_retrievable()
     {
-        $this->get('_api-tester/assets/api-tester.js')->seeStatusCode(200);
-        $this->get('_api-tester/assets/api-tester.css')->seeStatusCode(200);
+        $this->get('api-tester/assets/api-tester.js')->seeStatusCode(200);
+        $this->get('api-tester/assets/api-tester.css')->seeStatusCode(200);
     }
 
     public function test_routes_have_required_structure()
     {
-        $this->post('_api-tester/routes');
+        $this->get('api-tester/routes');
 
         $this->seeJsonStructure([
             'data' => [

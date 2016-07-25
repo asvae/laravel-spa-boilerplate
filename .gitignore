@@ -11,3 +11,5 @@
 /public/css/
 /public/build/
 /public/storage/
+
+composer.lock
