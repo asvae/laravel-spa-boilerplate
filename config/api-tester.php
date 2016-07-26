@@ -25,4 +25,8 @@ return [
     */
 
     'middleware' => ['web'],
+
+    'exclude' => [
+        '_'
+    ]
 ];
