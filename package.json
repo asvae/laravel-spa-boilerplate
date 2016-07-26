@@ -1,5 +1,4 @@
 {
-    "name": "Laravel SPA Boilerplate",
     "private": true,
     "scripts": {
         "prod": "gulp --production",
