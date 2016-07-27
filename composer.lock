@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "db9c8ec3a97ff23b061004216a954862",
-    "content-hash": "2cbd0bbbfe358866462a4a9046becbf7",
+    "hash": "6c1e8070aa62fb549c4b33a0cc727574",
+    "content-hash": "e888ffd53dff63fdc19ce7b8483f54c8",
     "packages": [
         {
             "name": "asvae/laravel-api-tester",
-            "version": "1.0.10",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/asvae/laravel-api-tester.git",
-                "reference": "a475fec48fb08729a92df62b4ef2b2c86d42c210"
+                "reference": "3d55f1225b44ee6429a3a1d6f333a2475585b1a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/a475fec48fb08729a92df62b4ef2b2c86d42c210",
-                "reference": "a475fec48fb08729a92df62b4ef2b2c86d42c210",
+                "url": "https://api.github.com/repos/asvae/laravel-api-tester/zipball/3d55f1225b44ee6429a3a1d6f333a2475585b1a4",
+                "reference": "3d55f1225b44ee6429a3a1d6f333a2475585b1a4",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "debug",
                 "laravel"
             ],
-            "time": "2016-07-19 17:52:56"
+            "time": "2016-07-26 12:58:37"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3911,7 +3911,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "asvae/laravel-api-tester": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
