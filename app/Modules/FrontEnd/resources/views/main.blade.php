@@ -14,7 +14,7 @@
         <meta name="debug" content="true">
     @endif
 
-    {{-- <link media="all" type="text/css" rel="stylesheet" href="{{ elixir('css/all.css') }}"> --}}
+     <link media="all" type="text/css" rel="stylesheet" href="{{ elixir('css/app.css') }}">
     <title>Laravel api tester</title>
 </head>
 <body>
