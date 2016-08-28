@@ -6,10 +6,7 @@ export default {
             '/subroutes': {component: vmTestRoute},
         }
     },
-    'another/route': {
-        component: vmTestRoute,
-    },
-    '/': {
+    '*': {
         component: vmTestRoute,
     },
 }
